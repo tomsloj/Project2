@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Subject.cpp"
+#include "Subject.hpp"
 #include "functions.h"
 using namespace std;
 void menu()
 {
-    Subject<int> sub1;
+    Subject<unsigned int> sub1;
     while(1)
     {
         int choice;
@@ -74,4 +74,5 @@ void menu()
         }
     }
 }
+
 
