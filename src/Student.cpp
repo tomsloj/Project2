@@ -1,4 +1,4 @@
-#include "Student.h"
+#include "Student.hpp"
 #include <iostream>
 using namespace std;
 void Student::set_student(string PESEL, string name, string surname, int IQ)

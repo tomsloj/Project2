@@ -2,8 +2,8 @@
 #define SUBJECT_H
 #include <vector>
 #include <iostream>
-#include "Student.h"
-#include "Teacher.h"
+#include "Student.hpp"
+#include "Teacher.hpp"
 template <typename T>
 class Subject
 {

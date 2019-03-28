@@ -1,4 +1,4 @@
-#include "Teacher.h"
+#include "Teacher.hpp"
 #include <iostream>
 using namespace std;
 void Teacher::set_teacher(string name, string surname, string academic_degree, int age)

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Subject.hpp"
-#include "functions.h"
+#include "functions.hpp"
 using namespace std;
 void menu()
 {
