@@ -29,3 +29,11 @@ void Teacher::get_teacher(string tmp)
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
     cout<<"\nAGE:"<<*(this->age);
 }
+Teacher::~Teacher()
+{
+    delete this->name;
+    delete this->surname;
+    delete this->academic_degree;
+    delete this->age;
+
+}
