@@ -11,6 +11,7 @@ private:
 public:
     void set_teacher(std::string, std::string, std::string, int age);
     void get_teacher();
+    void get_teacher(std::string);
 };
 #endif
 

@@ -20,3 +20,12 @@ void Teacher::get_teacher()
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
     cout<<"\nAGE:"<<*(this->age);
 }
+void Teacher::get_teacher(string tmp)
+{
+    cout<<"argument:"<<tmp;
+    cout<<"**********TEACHER**********";
+    cout<<"\nNAME:"<<*(this->name);
+    cout<<"\nSURNAME:"<<*(this->surname);
+    cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
+    cout<<"\nAGE:"<<*(this->age);
+}
