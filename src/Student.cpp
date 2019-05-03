@@ -1,6 +1,9 @@
-#include "Student.hpp"
 #include <iostream>
+
+#include "Student.hpp"
+
 using namespace std;
+
 void Student::set_student(string PESEL, string name, string surname, int IQ)
 {
     this->PESEL=PESEL;
@@ -8,6 +11,7 @@ void Student::set_student(string PESEL, string name, string surname, int IQ)
     this->surname=surname;
     this->IQ=IQ;
 }
+
 void Student::get_student()
 {
     cout<<"\nNAME:"<<this->name;
@@ -15,6 +19,7 @@ void Student::get_student()
     cout<<"\nPESEL:"<<this->PESEL;
     cout<<"\nIQ:"<<this->IQ;
 }
+
 void Student::operator++()
 {
     this->IQ=this->IQ+1;

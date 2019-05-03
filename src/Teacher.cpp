@@ -1,17 +1,24 @@
-#include "Teacher.hpp"
 #include <iostream>
+
+#include "Teacher.hpp"
+
 using namespace std;
+
 void Teacher::set_teacher(string name, string surname, string academic_degree, int age)
 {
     this->name=new string;
     *(this->name)=name;
+
     this->surname=new string;
     *(this->surname)=surname;
+
     this->academic_degree=new string;
     *(this->academic_degree)=academic_degree;
+
     this->age=new int;
     *(this->age)=age;
 }
+
 void Teacher::get_teacher()
 {
     cout<<"**********TEACHER**********";
@@ -20,6 +27,7 @@ void Teacher::get_teacher()
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
     cout<<"\nAGE:"<<*(this->age);
 }
+
 void Teacher::get_teacher(string tmp)
 {
     cout<<"argument:"<<tmp;
@@ -29,6 +37,7 @@ void Teacher::get_teacher(string tmp)
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
     cout<<"\nAGE:"<<*(this->age);
 }
+
 Teacher::~Teacher()
 {
     delete this->name;
