@@ -3,12 +3,15 @@ CC := g++
 SRCDIR := src
 BUILDDIR := build
 TARGET := bin/runner
- 
+OUT := bin
+
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 CFLAGS := -g -Wall -pedantic
 INC := -I include
+
+
 
 $(TARGET): $(OBJECTS)
 	@echo " Linking..."
@@ -23,3 +26,5 @@ clean:
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 
 .PHONY: clean
+
+$(shell   mkdir -p $(OUT))
