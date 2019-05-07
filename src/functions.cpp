@@ -5,6 +5,9 @@
 
 using namespace std;
 
+//1 & 4 checked
+
+
 void menu()
 {
     Subject<unsigned int> sub1;
@@ -58,7 +61,14 @@ void menu()
                 sub1.get_language();
                 break;
             case 5:
-                sub1.get_teacher();
+                try
+                {
+                    sub1.get_teacher();
+                }
+                catch(string e)
+                {
+                    cout << "\nSTOP " << e;
+                }
                 break;
             case 6:
                 sub1.get_students();

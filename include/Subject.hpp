@@ -81,7 +81,16 @@ void Subject<T>::get_students()
 template <typename T>
 void Subject<T>::get_teacher()
 {
-    this->teacher.get_teacher();
+    try
+    {
+        this->teacher.get_teacher();
+    }
+    catch(...)
+    {
+        throw;
+    }
+    
+    
 }
 
 template <typename T>

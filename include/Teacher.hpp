@@ -5,13 +5,14 @@
 
 class Teacher
 {
-    private:
+    private:       
         std::string *name;
         std::string *surname;
         std::string *academic_degree;
         int *age;
 
     public:
+        Teacher();
         ~Teacher();
         void set_teacher(std::string, std::string, std::string, int age);
         void get_teacher();

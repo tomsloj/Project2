@@ -4,6 +4,14 @@
 
 using namespace std;
 
+Teacher::Teacher ()
+{
+    name = NULL;
+    surname = NULL;
+    academic_degree = NULL;
+    age = NULL;
+}
+
 void Teacher::set_teacher(string name, string surname, string academic_degree, int age)
 {
     this->name=new string;
@@ -22,6 +30,12 @@ void Teacher::set_teacher(string name, string surname, string academic_degree, i
 void Teacher::get_teacher()
 {
     cout<<"**********TEACHER**********";
+    if( this->name == NULL || this->surname == NULL
+    || this->academic_degree == NULL || this->age == NULL )
+    {
+        string exception = "TEACHER_DOESN'T_EXIST";
+        throw exception;
+    }
     cout<<"\nNAME:"<<*(this->name);
     cout<<"\nSURNAME:"<<*(this->surname);
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);
