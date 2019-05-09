@@ -3,12 +3,11 @@
 
 #include <string>
 
-class Student
+#include "Human.hpp"
+
+class Student : public Human
 {
     private:
-        std::string PESEL;
-        std::string name;
-        std::string surname;
         int IQ;
     
     public:

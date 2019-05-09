@@ -1,22 +1,23 @@
 #include <iostream>
 
 #include "Student.hpp"
+#include "Human.hpp"
 
 using namespace std;
 
 void Student::set_student(string PESEL, string name, string surname, int IQ)
 {
-    this->PESEL=PESEL;
-    this->name=name;
-    this->surname=surname;
+    setPESEL( PESEL );
+    setName( name );
+    setSurname( surname );
     this->IQ=IQ;
 }
 
 void Student::get_student()
 {
-    cout<<"\nNAME:"<<this->name;
-    cout<<"\nSURNAME:"<<this->surname;
-    cout<<"\nPESEL:"<<this->PESEL;
+    cout<<"\nNAME:"<<getName();
+    cout<<"\nSURNAME:"<<getSurname();
+    cout<<"\nPESEL:"<<getPESEL();
     cout<<"\nIQ:"<<this->IQ;
 }
 

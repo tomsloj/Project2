@@ -61,7 +61,7 @@ void menu()
                 sub1.get_language();
                 break;
             case 5:
-                try
+                try 
                 {
                     sub1.get_teacher();
                 }

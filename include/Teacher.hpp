@@ -3,11 +3,11 @@
 
 #include <string>
 
-class Teacher
+#include "Human.hpp"
+
+class Teacher : public Human
 {
     private:       
-        std::string *name;
-        std::string *surname;
         std::string *academic_degree;
         int *age;
 
