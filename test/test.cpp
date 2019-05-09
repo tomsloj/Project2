@@ -80,4 +80,33 @@ BOOST_AUTO_TEST_CASE( testSetStudent2 )
         && student.getSurname() == "Smith" && student.getIQ() == 45 );
 }
 
+BOOST_AUTO_TEST_CASE( testIncreaseIQ1 )
+{
+    Student student;
+    student.set_student( "09876543211", "Andrew", "Dude", 123 );
+    ++student;
+    BOOST_CHECK( student.getIQ() == 124 );
+}
+BOOST_AUTO_TEST_CASE( testIncreaseIQ2 )
+{
+    Student student;
+    student.set_student( "56294643921", "Martin", "Smith", 45 );
+    ++student;
+    ++student;
+    ++student;
+    ++student;
+    ++student;
+    BOOST_CHECK( student.getIQ() == 50 );
+}
+BOOST_AUTO_TEST_CASE( testIncreaseIQ3 )
+{
+    Student student;
+    student.set_student( "09876543211", "Andrew", "Dude", 123 );
+    for ( int i = 0; i < 783; ++i )
+    {
+        ++student;
+    }
+    BOOST_CHECK( student.getIQ() == 906 );
+}
+
 BOOST_AUTO_TEST_SUITE_END()
