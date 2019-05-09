@@ -14,6 +14,7 @@ class Student : public Human
         void set_student(std::string, std::string, std::string, int);
         void get_student();
         void operator++();
+        int getIQ();
 };
 
 #endif

@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Student.hpp"
-#include "Human.hpp"
+#include "../include/Student.hpp"
+#include "../include/Human.hpp"
 
 using namespace std;
 
@@ -24,5 +24,10 @@ void Student::get_student()
 void Student::operator++()
 {
     this->IQ=this->IQ+1;
+}
+
+int Student::getIQ()
+{
+    return IQ;
 }
 

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <Human.hpp>
+#include "../include/Human.hpp"
 
 using namespace std;
 
@@ -11,7 +11,9 @@ Human::Human()
 
 Human::Human( string PESEL, string name, string surname )
 {
-
+    setPESEL ( PESEL );
+    setName ( name );
+    setSurname ( surname );
 }
 
 string Human::getPESEL ()
