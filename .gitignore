@@ -35,4 +35,4 @@ bin/
 *.out
 *.app
 
-test
+testfile
