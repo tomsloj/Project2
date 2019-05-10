@@ -45,3 +45,10 @@ void Human::setSurname( string surname )
 {
     this->surname = surname;
 }
+
+void Human::writePearson ()
+{
+    cout << "Name: " << name << "\n";
+    cout << "Surname: " << surname << "\n";
+    cout << "PESEL: " << PESEL << "\n";
+}

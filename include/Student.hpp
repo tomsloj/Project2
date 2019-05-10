@@ -12,9 +12,10 @@ class Student : public Human
     
     public:
         void set_student(std::string, std::string, std::string, int);
-        void get_student();
+        virtual void writePearson();
         void operator++();
         int getIQ();
+        
 };
 
 #endif

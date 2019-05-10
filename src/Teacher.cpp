@@ -26,14 +26,14 @@ void Teacher::set_teacher(string name, string surname, string academic_degree, i
     *(this->age)=age;
 }
 
-void Teacher::get_teacher()
+void Teacher::writePearson()
 {
-    cout<<"**********TEACHER**********";
     if( this->academic_degree == NULL || this->age == NULL )
     {
         string exception = "TEACHER_DOESN'T_EXIST";
         throw exception;
     }
+    cout<<"**********TEACHER**********";
     cout<<"\nNAME:"<<getName();
     cout<<"\nSURNAME:"<<getSurname();
     cout<<"\nACADEMIC DEGREE:"<<*(this->academic_degree);

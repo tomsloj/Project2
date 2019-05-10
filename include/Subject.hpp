@@ -73,7 +73,7 @@ void Subject<T>::get_students()
     std::cout<<"\n**********STUDENTS**********";
     for(std::vector<Student>::iterator it=this->students.begin(); it!=students.end(); ++it)
     {
-        (*it).get_student();
+        (*it).writePearson();
         std::cout<<std::endl<<std::endl;
     }
 }
@@ -83,7 +83,7 @@ void Subject<T>::get_teacher()
 {
     try
     {
-        this->teacher.get_teacher();
+        this->teacher.writePearson();
     }
     catch(...)
     {

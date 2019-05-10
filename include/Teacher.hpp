@@ -15,7 +15,7 @@ class Teacher : public Human
         Teacher();
         ~Teacher();
         void set_teacher(std::string, std::string, std::string, int age);
-        void get_teacher();
+        virtual void writePearson();
         void get_teacher(std::string);
 };
 

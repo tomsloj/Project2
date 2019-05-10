@@ -13,7 +13,7 @@ void Student::set_student(string PESEL, string name, string surname, int IQ)
     this->IQ=IQ;
 }
 
-void Student::get_student()
+void Student::writePearson()
 {
     cout<<"\nNAME:"<<getName();
     cout<<"\nSURNAME:"<<getSurname();
