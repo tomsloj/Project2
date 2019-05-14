@@ -39,7 +39,15 @@ void menu()
                 cin>>surname;
                 cout<<"type IQ:";
                 cin>>IQ;
-                sub1.add_student(PESEL,name,surname,IQ);
+                try
+                {
+                    sub1.add_student(PESEL,name,surname,IQ);
+                }
+                catch( string e )
+                {
+                    cout << "\nSTOP " << e << "\n";
+                    cout << "STUDENT CANNOT BE ADD\N";
+                }
                 break;
             }
             case 3:

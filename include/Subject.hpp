@@ -61,6 +61,11 @@ void Subject<T>::set_teacher(std::string name, std::string surname, std::string 
 template <typename T>
 void Subject<T>::add_student(std::string PESEL, std::string name, std::string surname, int IQ)
 {
+    if( amount >= 35 )
+    {
+        string exception = "TOO_MANY_STUDENTS";
+        throw exception;
+    }
     Student stud;
     stud.set_student(PESEL,name,surname,IQ);
     this->students.push_back(stud);
@@ -85,7 +90,7 @@ void Subject<T>::get_teacher()
     {
         this->teacher.writePearson();
     }
-    catch(...)
+    catch(string e)
     {
         throw;
     }
