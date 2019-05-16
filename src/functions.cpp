@@ -46,7 +46,7 @@ void menu()
                 catch( string e )
                 {
                     cout << "\nSTOP " << e << "\n";
-                    cout << "STUDENT CANNOT BE ADD\N";
+                    cout << "STUDENT CANNOT BE ADD\n";
                 }
                 break;
             }

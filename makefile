@@ -28,3 +28,8 @@ clean:
 .PHONY: clean
 
 $(shell   mkdir -p $(OUT))
+
+.PHONY: test
+test:
+	@g++ -o test/testfile test/test.cpp -lboost_unit_test_framework
+	@./test/testfile --log_level=test_suite

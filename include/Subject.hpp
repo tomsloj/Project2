@@ -63,7 +63,7 @@ void Subject<T>::add_student(std::string PESEL, std::string name, std::string su
 {
     if( amount >= 35 )
     {
-        string exception = "TOO_MANY_STUDENTS";
+        std::string exception = "TOO_MANY_STUDENTS";
         throw exception;
     }
     Student stud;
@@ -90,7 +90,7 @@ void Subject<T>::get_teacher()
     {
         this->teacher.writePearson();
     }
-    catch(string e)
+    catch( std::string e )
     {
         throw;
     }
