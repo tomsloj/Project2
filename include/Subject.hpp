@@ -7,6 +7,8 @@
 #include "Student.hpp"
 #include "Teacher.hpp"
 
+const int MAX_PEOPLE_IN_CLASSROOM = 35;
+
 template <typename T>
 class Subject
 {
@@ -61,7 +63,7 @@ void Subject<T>::set_teacher(std::string name, std::string surname, std::string 
 template <typename T>
 void Subject<T>::add_student(std::string PESEL, std::string name, std::string surname, int IQ)
 {
-    if( amount >= 35 )
+    if( amount >= MAX_PEOPLE_IN_CLASSROOM )
     {
         std::string exception = "TOO_MANY_STUDENTS";
         throw exception;
